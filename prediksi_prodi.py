@@ -115,3 +115,6 @@ label_hasil = ttk.Label(card_hasil, text="-", style="Result.TLabel",
                         anchor="center")
 label_hasil.pack(fill="x", pady=(6, 0))
 
+root.bind("<Return>", hasil_prediksi)
+
+root.mainloop()
