@@ -28,3 +28,22 @@ x = (root.winfo_screenwidth() - lebar) // 2
 y = (root.winfo_screenheight() - tinggi) // 2
 root.geometry(f"{lebar}x{tinggi}+{x}+{y}")
 
+style = ttk.Style()
+style.theme_use("clam")
+
+style.configure("TFrame", background=BG)
+style.configure("Card.TFrame", background=CARD)
+
+style.configure("Title.TLabel", background=BG, foreground=TEXT,
+                font=(FONT, 22, "bold"))
+style.configure("Subtitle.TLabel", background=BG, foreground=MUTED,
+                font=(FONT, 11))
+style.configure("CardTitle.TLabel", background=CARD, foreground=TEXT,
+                font=(FONT, 12, "bold"))
+style.configure("Mapel.TLabel", background=CARD, foreground=TEXT,
+                font=(FONT, 11))
+style.configure("Muted.TLabel", background=CARD, foreground=MUTED,
+                font=(FONT, 11))
+style.configure("Result.TLabel", background=CARD, foreground=MUTED,
+                font=(FONT, 22, "bold"))
+
