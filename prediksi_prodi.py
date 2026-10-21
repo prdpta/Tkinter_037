@@ -106,3 +106,12 @@ btn_prediksi = ttk.Button(root, text="Hasil Prediksi",
                           command=hasil_prediksi)
 btn_prediksi.pack(padx=28, pady=(20, 16), fill="x")
 
+card_hasil = ttk.Frame(root, style="Card.TFrame", padding=(24, 18))
+card_hasil.pack(padx=28, fill="x")
+
+ttk.Label(card_hasil, text="Prodi yang diprediksi", style="Muted.TLabel",
+          anchor="center").pack(fill="x")
+label_hasil = ttk.Label(card_hasil, text="-", style="Result.TLabel",
+                        anchor="center")
+label_hasil.pack(fill="x", pady=(6, 0))
+
