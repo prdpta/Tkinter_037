@@ -64,3 +64,11 @@ style.map("Accent.TButton",
           background=[("pressed", ACCENT_PRESSED), ("active", ACCENT_HOVER)],
           foreground=[("pressed", "white"), ("active", "white")])
 
+header = ttk.Frame(root)
+header.pack(fill="x", pady=(28, 16))
+
+ttk.Label(header, text="Aplikasi Prediksi Prodi Pilihan",
+          style="Title.TLabel", anchor="center").pack()
+ttk.Label(header, text="Masukkan nilai mata pelajaran kamu di bawah ini",
+          style="Subtitle.TLabel", anchor="center").pack(pady=(4, 0))
+
