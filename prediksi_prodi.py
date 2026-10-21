@@ -97,3 +97,7 @@ for i, nama in enumerate(mapel):
     ent.grid(row=baris, column=kolom + 1, padx=(10, 0), pady=7, sticky="e")
     entries.append(ent)
 
+card_input.columnconfigure(0, weight=1)
+card_input.columnconfigure(2, minsize=28)
+card_input.columnconfigure(3, weight=1)
+
