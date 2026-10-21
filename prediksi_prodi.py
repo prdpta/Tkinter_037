@@ -23,3 +23,8 @@ root.title("Prediksi Prodi Pilihan")
 root.configure(bg=BG)
 root.resizable(False, False)
 
+lebar, tinggi = 580, 640
+x = (root.winfo_screenwidth() - lebar) // 2
+y = (root.winfo_screenheight() - tinggi) // 2
+root.geometry(f"{lebar}x{tinggi}+{x}+{y}")
+
