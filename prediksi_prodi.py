@@ -87,3 +87,13 @@ mapel = [
     "Geografi", "Sejarah",
 ]
 
+entries = []
+for i, nama in enumerate(mapel):
+    baris = (i // 2) + 1            
+    kolom = 0 if i % 2 == 0 else 3  
+    ttk.Label(card_input, text=nama, style="Mapel.TLabel"
+              ).grid(row=baris, column=kolom, sticky="w", pady=7)
+    ent = ttk.Entry(card_input, width=7, justify="center", style="Field.TEntry")
+    ent.grid(row=baris, column=kolom + 1, padx=(10, 0), pady=7, sticky="e")
+    entries.append(ent)
+
