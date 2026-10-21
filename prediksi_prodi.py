@@ -101,3 +101,8 @@ card_input.columnconfigure(0, weight=1)
 card_input.columnconfigure(2, minsize=28)
 card_input.columnconfigure(3, weight=1)
 
+btn_prediksi = ttk.Button(root, text="Hasil Prediksi",
+                          style="Accent.TButton", cursor="hand2",
+                          command=hasil_prediksi)
+btn_prediksi.pack(padx=28, pady=(20, 16), fill="x")
+
