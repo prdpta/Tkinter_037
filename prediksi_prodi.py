@@ -18,3 +18,8 @@ def hasil_prediksi(event=None):
     label_hasil.config(text="Teknologi Informasi", foreground=SUCCESS)
 
 
+root = tk.Tk()
+root.title("Prediksi Prodi Pilihan")
+root.configure(bg=BG)
+root.resizable(False, False)
+
