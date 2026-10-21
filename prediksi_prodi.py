@@ -79,3 +79,11 @@ ttk.Label(card_input, text="Input Nilai Mata Pelajaran",
           style="CardTitle.TLabel").grid(row=0, column=0, columnspan=5,
                                          sticky="w", pady=(0, 14))
 
+mapel = [
+    "Matematika", "Bahasa Indonesia",
+    "Bahasa Inggris", "Fisika",
+    "Kimia", "Biologi",
+    "Ekonomi", "Sosiologi",
+    "Geografi", "Sejarah",
+]
+
