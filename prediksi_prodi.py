@@ -72,3 +72,10 @@ ttk.Label(header, text="Aplikasi Prediksi Prodi Pilihan",
 ttk.Label(header, text="Masukkan nilai mata pelajaran kamu di bawah ini",
           style="Subtitle.TLabel", anchor="center").pack(pady=(4, 0))
 
+card_input = ttk.Frame(root, style="Card.TFrame", padding=(24, 20))
+card_input.pack(padx=28, fill="x")
+
+ttk.Label(card_input, text="Input Nilai Mata Pelajaran",
+          style="CardTitle.TLabel").grid(row=0, column=0, columnspan=5,
+                                         sticky="w", pady=(0, 14))
+
