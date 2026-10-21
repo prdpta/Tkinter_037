@@ -13,3 +13,8 @@ SUCCESS = "#34d399"
 FONT = "Helvetica Neue"
 
 
+def hasil_prediksi(event=None):
+    """Apapun input yang diberikan, hasilnya selalu Teknologi Informasi."""
+    label_hasil.config(text="Teknologi Informasi", foreground=SUCCESS)
+
+
