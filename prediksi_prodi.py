@@ -47,3 +47,12 @@ style.configure("Muted.TLabel", background=CARD, foreground=MUTED,
 style.configure("Result.TLabel", background=CARD, foreground=MUTED,
                 font=(FONT, 22, "bold"))
 
+style.configure("Field.TEntry",
+                fieldbackground=BG, foreground=TEXT, insertcolor=TEXT,
+                bordercolor=BORDER, lightcolor=BORDER, darkcolor=BORDER,
+                padding=6)
+style.map("Field.TEntry",
+          bordercolor=[("focus", ACCENT)],
+          lightcolor=[("focus", ACCENT)],
+          darkcolor=[("focus", ACCENT)])
+
