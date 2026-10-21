@@ -56,3 +56,11 @@ style.map("Field.TEntry",
           lightcolor=[("focus", ACCENT)],
           darkcolor=[("focus", ACCENT)])
 
+style.configure("Accent.TButton",
+                background=ACCENT, foreground="white",
+                font=(FONT, 13, "bold"), padding=(0, 12),
+                borderwidth=0, focuscolor=ACCENT)
+style.map("Accent.TButton",
+          background=[("pressed", ACCENT_PRESSED), ("active", ACCENT_HOVER)],
+          foreground=[("pressed", "white"), ("active", "white")])
+
